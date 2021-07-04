@@ -56,3 +56,7 @@ Before rerunning the analyses with renamed files:
 raxmlHPC-PTHREADS-SSE3 -f a -T 60  -p 35 -x 345 -#100  -m GTRGAMMA -c 6 -q Parts2Codon.txt -s Conc2Codon.txt -n Conc2Codon.nwk
 ```
 
+I then repeated some of the same steps (concatenate_seqs_Dictyopharidae.py) on protein alignments:
+```
+raxmlHPC-PTHREADS-SSE3 -f a -T 20 -p 35 -x 345 -#100 -m PROTGAMMAWAG -s Concatenated.fasta -n ConcProt.nwk
+```
